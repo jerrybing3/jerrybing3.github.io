@@ -5,6 +5,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 img {
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -160,10 +180,33 @@ footer {
   </nav>
   
   <article>
-    <h1>picture</h1>
-    <p>this is my picture.</p>
-    <br>
-    <img src="cute-baby-girl.jpg"width="200" height="150">
+    <div class="gallery">
+  <a target="_blank" href="cute-baby-girl.jpg">
+    <img src="cute-baby-girl.jpg" alt="Child hood" width="600" height="400">
+  </a>
+  <div class="desc">I love to daze while I were a kid.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="cuttie.jpg">
+    <img src="cuttie.jpg" alt="Also childhood" width="600" height="400">
+  </a>
+  <div class="desc">Rabbit is my favorite animal!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="teenage.jpg">
+    <img src="teenage.jpg" alt="teenager" width="600" height="400">
+  </a>
+  <div class="desc">While I was a teenager, I were frustrated all the time.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="college.jpg">
+    <img src="college.jpg" alt="Now" width="600" height="400">
+  </a>
+  <div class="desc">Right now I am a college student!</div>
+</div>
     
   </article>
 </section>
